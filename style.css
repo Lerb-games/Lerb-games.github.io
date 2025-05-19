@@ -7,3 +7,24 @@ h1 {
 p {
     color: #000000;
 }
+
+.cloud_container {
+    width: 500px;
+    height: 700px;
+    position: relative;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gradient {
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(to top,transparent,white,white);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
