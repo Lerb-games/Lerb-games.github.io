@@ -1,3 +1,12 @@
+@font-face {
+    font-family: MSW98UI;
+    src: url(Fonts/MSW98UI-Regular.ttf);
+}
+@font-face {
+    font-family: MSW98UI;
+    src: url(Fonts/MSW98UI-Bold.ttf);
+    font-weight: bold;
+}
 body {
     background-color: #008080;
 }
@@ -10,14 +19,14 @@ p {
 
 .cloud_container {
     width: 500px;
-    height: 700px;
+    height: 500px;
     position: relative;
 }
 .gradient {
     height: 100%;
     width: 100%;
     background-image: 
-    linear-gradient(to top,transparent,white,white);
+    linear-gradient(to bottom,transparent,white,white);
     position: absolute;
     top: 0;
     left: 0;
@@ -27,4 +36,41 @@ p {
     width: 100%;
     object-fit: cover;
     display: block;
+}
+.taskbar {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background-color: #c3c3c3;
+    outline: 1px solid #dfdfdf;
+    border-top: 1px solid #fdffff;
+}
+.start {
+    text-align: center;
+    display: block;
+    position: absolute;
+    height: 23px;
+    width: 75px;
+    margin: 1.25px;
+    background-color: #c3c3c3;
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+}
+.start_img {
+    height: 22px;
+    width: 22px;
+    padding-left: 3px;
+}
+.indent {
+    height: 23px;
+    width: 0px;
+    border-left: 1px grey;
+    border-right: 1px #fff;
+}
+* {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    font-family: MSW98UI;
 }
