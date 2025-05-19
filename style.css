@@ -13,12 +13,6 @@ p {
     height: 700px;
     position: relative;
 }
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
 .gradient {
     height: 100%;
     width: 100%;
@@ -27,4 +21,10 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+}
+.cloud_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
