@@ -37,25 +37,38 @@ p {
     object-fit: cover;
     display: block;
 }
+
 .taskbar {
-    display: inline;
+    justify-content: left;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 25px;
+    height: 27px;
     background-color: #c3c3c3;
     outline: 1px solid #dfdfdf;
     border-top: 1px solid #fdffff;
 }
 .start {
     text-align: center;
-    display: block;
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 23px;
     width: 75px;
     margin: 1.25px;
     background-color: #c3c3c3;
+}
+.border_one {
+    box-shadow: inset 1px 1px #fff,inset -2px -2px grey;
+}
+.border_two {
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+}
+.border_three {
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
 }
 .start_img {
@@ -65,9 +78,15 @@ p {
 }
 .indent {
     height: 23px;
-    width: 0px;
+    width: 2px;
     border-left: 1px grey;
     border-right: 1px #fff;
+    background-color: #000;
+}
+.bump {
+    height: 21px;
+    width: 1px;
+    background-color: #c3c3c3;
 }
 * {
     image-rendering: crisp-edges;
