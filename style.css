@@ -62,11 +62,37 @@ p {
     left: 0;
     right: 0;
     height: 27px;
+    width: 1;
     background-color: #c3c3c3;
     outline: 1px solid #dfdfdf;
     border-top: 1px solid #fdffff;
 }
-.taskbar_icons {
+.taskbar_left {
+    justify-content: left;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
+    width: 171px;
+}
+.taskbar_right {
+    justify-content: right;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    height: 27px;
+    width: 90px;
+}
+.taskbar_quick_open {
     justify-content: left;
     display: flex;
     flex-direction: row;
@@ -88,6 +114,7 @@ p {
     height: 23px;
     width: 75px;
     margin: 1.25px;
+    margin-left: 2px;
     margin-right: 0px;
     background-color: #c3c3c3;
 }
@@ -115,8 +142,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1px;
+    margin-right: 2px;
     height: 23px;
 }
 .time_settings_icon_left {
@@ -125,6 +152,7 @@ p {
 .time_settings_text {
     font-size: 14px;
     text-align: center;
+    margin-right: 5px;
 }
 
 * {
